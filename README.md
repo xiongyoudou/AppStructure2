@@ -1,1 +1,2 @@
-# AppStructure2
+# AppStructure
+a common structure for App

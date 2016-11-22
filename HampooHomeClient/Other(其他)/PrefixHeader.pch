@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  ShopApp
+//
+//  Created by xiong有都 on 15/10/31.
+//  Copyright © 2015年 xiong有都. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+
+#import "Masonry.h"
+#import "MJRefresh.h"
+
+#import "UIButton+WebCache.h"
+#import "UIImageView+WebCache.h"
+#import "UIColor+XYDHEX.h"
+#import "UIImage+XYDResize.h"
+#import "NSFileManager+XYDPaths.h"
+#import "NSString+XYDHash.h"
+#import "NSString+XYDContains.h"
+#import "NSFileManager+XYDPaths.h"
+#import "NSError+XYDErrorCode.h"
+
+
+#import "AppMacro.h"
+#import "UtilsMacro.h"
+#import "NotificationMacro.h"
+#import "AppGlobal.h"
+#import "MyGlobal.h"
+#import "HttpMacro.h"
+
+#import "AppTool.h"
+#import "DialogTool.h"
+#import "ImageTool.h"
+#import "MyTool.h"
+#import "HttpTool.h"
+
+#import "AppDelegate.h"
+#endif /* PrefixHeader_pch */
+
+#endif
