@@ -45,7 +45,6 @@
     tabBarControllerConfig = [[TabBarControllerConfig alloc] init];    
     LeftSideVCtrl *leftVCtrl = [[LeftSideVCtrl alloc]initWithNibName:@"LeftSideVCtrl" bundle:nil];
     LeftSlideViewController *leftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVCtrl andMainView:tabBarControllerConfig.tabBarController];
-    [tabBarControllerConfig configureDCPathButton];
     leftVCtrl.slideViewController = leftSlideVC;
     [tabBarControllerConfig.tabBarController xyd_weaklyAssociateValue:leftSlideVC withKey:(__bridge const void *)(kLeftSliderVCtrlAssociateObjectKey)];
     [self.window setRootViewController:leftSlideVC];

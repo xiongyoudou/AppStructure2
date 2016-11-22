@@ -31,7 +31,7 @@
     [AppTool setLeftNaviMenuItem:self];
     
     UIButton *rightBtn = [AppTool getNavigationBtnImage:[UIImage imageNamed:@"nav_menu"] target:self action:@selector(clickRightBtn:) frame:CGRectMake(0, 0, 40, 44)];
-    [rightBtn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -20)];
+    [rightBtn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -10)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
 }
 

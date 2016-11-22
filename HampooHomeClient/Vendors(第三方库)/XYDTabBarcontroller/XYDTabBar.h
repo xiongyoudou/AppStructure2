@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XYDPlusButton.h"
+#import "XYDPlusButtonProtocol.h"
 @class XYDTabBarController;
 
 @interface XYDTabBar : UITabBar
@@ -24,9 +24,7 @@ typedef void(^ClickTabbarItemBlock)(NSInteger fromItemIndex,NSInteger toItemInde
 
 @property (nonatomic,weak,nullable) XYDTabBarController *tabBarController;
 // custom plusButton instance
-@property (nonatomic,strong,nullable) XYDPlusButton <XYDPlusButtonProtocol> *plusButton;
-// 在tabbar栏的中间位置是否留空，不显示barItem和XYDPlusButton，而是在外部显示其他的自定义控件
-@property (nonatomic,assign) BOOL isCenterSpace;
+@property (nonatomic,strong,nullable) UIView <XYDPlusButtonProtocol> *plusButton;
 @property (nonatomic,copy,nullable) ClickTabbarItemBlock clickTabbarItemBlock;
 
 /**

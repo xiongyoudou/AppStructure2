@@ -11,7 +11,13 @@
 @protocol XYDPlusButtonProtocol
 
 @required
-- (id)plusButton;
+
+@property (nonatomic,assign)BOOL btnSelected;
+
+- (void)plusChildViewControllerButtonClicked:(UIButton<XYDPlusButtonProtocol> *)sender;
+- (CGFloat)plusButtonWidth;
+
+
 @optional
 
 /*!
@@ -42,12 +48,3 @@
 
 @end
 
-@class CYLTabBar;
-
-
-@interface XYDPlusButton : UIButton
-
-- (void)plusChildViewControllerButtonClicked:(UIButton<XYDPlusButtonProtocol> *)sender;
-- (CGFloat)plusButtonWidth;
-
-@end

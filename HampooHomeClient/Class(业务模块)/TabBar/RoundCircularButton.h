@@ -6,9 +6,9 @@
 //  Copyright © 2016年 xiong有都. All rights reserved.
 //
 
-#import "XYDPlusButton.h"
+#import "XYDPlusButtonProtocol.h"
 
-@interface RoundCircularButton : XYDPlusButton<XYDPlusButtonProtocol>
+@interface RoundCircularButton : UIButton<XYDPlusButtonProtocol>
 
 
 @end

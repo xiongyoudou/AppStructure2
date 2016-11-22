@@ -9,6 +9,7 @@
 #import "RoundCircularButton.h"
 
 @implementation RoundCircularButton
+@synthesize btnSelected = _btnSelected;
 
 #pragma mark -
 #pragma mark - Life Cycle
@@ -70,11 +71,28 @@
     return self;
 }
 
+- (void)plusChildViewControllerButtonClicked:(UIButton<XYDPlusButtonProtocol> *)sender {
+    sender.btnSelected = YES;
+}
+
+- (CGFloat)plusButtonWidth {
+    return self.frame.size.width;
+}
+
+- (void)setBtnSelected:(BOOL)btnSelected {
+    _btnSelected = btnSelected;
+    self.selected = _btnSelected;
+}
+
+- (BOOL)btnSelected {
+    return _btnSelected;
+}
+
 #pragma mark -
 #pragma mark - Event Response
 
 - (void)clickPublish {
-    self.selected = !self.selected;
+    self.btnSelected = !self.btnSelected;
     NSLog(@"点击按钮");
 }
 

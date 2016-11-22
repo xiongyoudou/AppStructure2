@@ -110,14 +110,14 @@ static void *const XYDTabBarContext = (void*)&XYDTabBarContext;
 }
 
 
-- (void)setPlusButton:(XYDPlusButton<XYDPlusButtonProtocol> *)plusButton {
+- (void)setPlusButton:(UIView<XYDPlusButtonProtocol> *)plusButton {
     _plusButton = plusButton;
     [self sharedInit];
 }
 
 - (instancetype)sharedInit {
     if (_plusButton) {
-        [self addSubview:(UIButton *)_plusButton];
+        [self addSubview:_plusButton];
     }
     // KVO注册监听
     _tabBarItemWidth = 0;
@@ -132,56 +132,30 @@ static void *const XYDTabBarContext = (void*)&XYDTabBarContext;
     CGFloat barHeight = self.bounds.size.height;
     
     _tabBarItemWidth = (barWidth - [_plusButton plusButtonWidth]) / [_tabBarController.viewControllers count];
-    if (_isCenterSpace) {
-        _tabBarItemWidth = (barWidth - [_plusButton plusButtonWidth]) /([_tabBarController.viewControllers count] + 1);
-    }
     if (_plusButton) {
         CGFloat multiplerInCenterY = [self multiplerInCenterY];
         self.plusButton.center = CGPointMake(barWidth * 0.5, barHeight * multiplerInCenterY);
-        NSUInteger plusButtonIndex = [self plusButtonIndex];
-        NSArray *sortedSubviews = [self sortedSubviews];
-        NSArray *tabBarButtonArray = [self tabBarButtonFromTabBarSubviews:sortedSubviews];
-        if (tabBarButtonArray.count) {
-            [self setupSwappableImageViewDefaultOffset:tabBarButtonArray[0]];
-            [tabBarButtonArray enumerateObjectsUsingBlock:^(UIView * _Nonnull childView, NSUInteger buttonIndex, BOOL * _Nonnull stop) {
+        if (self.barItems.count) {
+            [self setupSwappableImageViewDefaultOffset:self.barItems[0]];
+            NSUInteger plusButtonIndex = [self plusButtonIndex];
+            [self.barItems enumerateObjectsUsingBlock:^(UIView * _Nonnull childView, NSUInteger buttonIndex, BOOL * _Nonnull stop) {
                 //调整UITabBarItem的位置
-                CGFloat childViewX = 0;
+                CGFloat buttonX = buttonIndex * _tabBarItemWidth;
                 if (buttonIndex >= plusButtonIndex) {
-                    childViewX = buttonIndex * _tabBarItemWidth + [_plusButton plusButtonWidth];
-                } else {
-                    childViewX = buttonIndex * _tabBarItemWidth;
+                    if (_plusButton) {
+                        buttonX += _plusButton.frame.size.width;
+                    }else {
+                        buttonX += _tabBarItemWidth;
+                    }
                 }
                 //仅修改childView的x和宽度,yh值不变
-                childView.frame = CGRectMake(childViewX,
-                                             CGRectGetMinY(childView.frame),
-                                             [_plusButton plusButtonWidth],
-                                             CGRectGetHeight(childView.frame)
-                                             );
+                childView.frame = CGRectMake(buttonX, 0, _tabBarItemWidth, barHeight);
             }];
         }
-        
-        //bring the plus button to top
-        [self bringSubviewToFront:self.plusButton];
     }
     
-    // 按钮的frame数据
-    CGFloat buttonH = self.frame.size.height;
-    CGFloat buttonW = _tabBarItemWidth;
-    CGFloat buttonY = 0;
-    for (int index = 0; index < self.barItems.count; index++) {
-        // 1.取出按钮
-        XYDTabBarButton *barButton = self.barItems[index];
-        // 2.设置按钮的frame
-        CGFloat buttonX = index * buttonW;
-        if (index > self.items.count * 0.5 - 1 && (_plusButton || _isCenterSpace)) {
-            if (_plusButton) {
-                buttonX += _plusButton.frame.size.width;
-            }else {
-                buttonX += buttonW;
-            }
-        }
-        barButton.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
-    }
+    //bring the plus button to top
+    [self bringSubviewToFront:self.plusButton];
 }
 
 #pragma mark -

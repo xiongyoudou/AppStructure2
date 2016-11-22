@@ -35,7 +35,7 @@ NSString *const XYDTabBarItemSelectedImage = @"XYDTabBarItemSelectedImage";
     
 }
 
-- (instancetype)initWithPlusButton:(XYDPlusButton <XYDPlusButtonProtocol> *)button {
+- (instancetype)initWithPlusButton:(UIView <XYDPlusButtonProtocol> *)button {
     if (self = [super init]) {
         _plusButton = button;
         // 处理tabBar，使用自定义 tabBar 添加 发布按钮
@@ -69,8 +69,7 @@ NSString *const XYDTabBarItemSelectedImage = @"XYDTabBarItemSelectedImage";
 #pragma mark -
 #pragma mark - public Methods
 
-- (instancetype)initWithViewControllers:(NSArray<UIViewController *> *)viewControllers plusButton:(XYDPlusButton<XYDPlusButtonProtocol> *)plusButton isCenterSpace:(BOOL)isCenterSpace tabBarItemsAttributes:(NSArray<NSDictionary *> *)tabBarItemsAttributes {
-    _isCenterSpace = isCenterSpace;
+- (instancetype)initWithViewControllers:(NSArray<UIViewController *> *)viewControllers plusButton:(UIView<XYDPlusButtonProtocol> *)plusButton tabBarItemsAttributes:(NSArray<NSDictionary *> *)tabBarItemsAttributes {
     if (self = [self initWithPlusButton:plusButton]) {
         _tabBarItemsAttributes = tabBarItemsAttributes;
         self.viewControllers = viewControllers;
@@ -78,8 +77,8 @@ NSString *const XYDTabBarItemSelectedImage = @"XYDTabBarItemSelectedImage";
     return self;
 }
 
-+ (instancetype)tabBarControllerWithViewControllers:(NSArray<UIViewController *> *)viewControllers plusButton:(XYDPlusButton<XYDPlusButtonProtocol> *)plusButton isCenterSpace:(BOOL)isCenterSpace tabBarItemsAttributes:(NSArray<NSDictionary *> *)tabBarItemsAttributes {
-    XYDTabBarController *tabBarController = [[XYDTabBarController alloc] initWithViewControllers:viewControllers plusButton:plusButton isCenterSpace:isCenterSpace tabBarItemsAttributes:tabBarItemsAttributes];
++ (instancetype)tabBarControllerWithViewControllers:(NSArray<UIViewController *> *)viewControllers plusButton:(UIView<XYDPlusButtonProtocol> *)plusButton tabBarItemsAttributes:(NSArray<NSDictionary *> *)tabBarItemsAttributes {
+    XYDTabBarController *tabBarController = [[XYDTabBarController alloc] initWithViewControllers:viewControllers plusButton:plusButton tabBarItemsAttributes:tabBarItemsAttributes];
     return tabBarController;
 }
 
@@ -95,7 +94,6 @@ NSString *const XYDTabBarItemSelectedImage = @"XYDTabBarItemSelectedImage";
         self.selectedIndex = toItemIndex;
     };
     tabBar.plusButton = self.plusButton;
-    tabBar.isCenterSpace = self.isCenterSpace;
     tabBar.tabBarController = self;
     [self setValue:tabBar forKey:@"tabBar"];
 }
@@ -216,7 +214,7 @@ NSString *const XYDTabBarItemSelectedImage = @"XYDTabBarItemSelectedImage";
     NSUInteger selectedIndex = tabBarController.selectedIndex;
     if (_plusButton) {
         if ((selectedIndex == [_plusButton indexOfPlusButtonInTabBar]) && (viewController != [_plusButton plusChildViewController])) {
-            _plusButton.selected = NO;
+            _plusButton.btnSelected = NO;
         }
     }
     return YES;

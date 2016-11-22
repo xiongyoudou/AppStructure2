@@ -12,6 +12,5 @@
 @interface TabBarControllerConfig : NSObject
 
 @property (nonatomic,strong)XYDTabBarController *tabBarController;
-- (void)configureDCPathButton;
 
 @end

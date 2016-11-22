@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XYDPlusButton.h"
+#import "XYDPlusButtonProtocol.h"
 
 FOUNDATION_EXTERN NSString * _Nullable const XYDTabBarItemTitle;
 FOUNDATION_EXTERN NSString * _Nullable const XYDTabBarItemImage;
@@ -32,10 +32,7 @@ FOUNDATION_EXTERN NSString * _Nullable const XYDTabBarItemSelectedImage;
 @property (nonatomic, readwrite, assign) UIEdgeInsets imageInsets;
 
 // custom plusButton instance
-@property (nonatomic,strong,nullable) XYDPlusButton <XYDPlusButtonProtocol> *plusButton;
-
-// 在tabbar栏的中间位置是否留空，不显示barItem和XYDPlusButton，而是在外部显示其他的自定义控件
-@property (nonatomic,assign) BOOL isCenterSpace;
+@property (nonatomic,strong,nullable) UIView <XYDPlusButtonProtocol> *plusButton;
 
 /*!
  * To set both UIBarItem label text attributes in the tabBar,
@@ -43,9 +40,9 @@ FOUNDATION_EXTERN NSString * _Nullable const XYDTabBarItemSelectedImage;
  */
 @property (nonatomic, readwrite, assign) UIOffset titlePositionAdjustment;
 
-- (nullable instancetype)initWithViewControllers:(nullable NSArray<UIViewController *> *)viewControllers plusButton:(nullable XYDPlusButton<XYDPlusButtonProtocol> *)plusButton isCenterSpace:(BOOL)isCenterSpace tabBarItemsAttributes:(nullable NSArray<NSDictionary *> *)tabBarItemsAttributes;
+- (nullable instancetype)initWithViewControllers:(nullable NSArray<UIViewController *> *)viewControllers plusButton:(nullable UIView<XYDPlusButtonProtocol> *)plusButton tabBarItemsAttributes:(nullable NSArray<NSDictionary *> *)tabBarItemsAttributes;
 
-+ (nullable instancetype)tabBarControllerWithViewControllers:(nullable NSArray<UIViewController *> *)viewControllers plusButton:(nullable XYDPlusButton<XYDPlusButtonProtocol> *)plusButton isCenterSpace:(BOOL)isCenterSpace tabBarItemsAttributes:(nullable NSArray<NSDictionary *> *)tabBarItemsAttributes;
++ (nullable instancetype)tabBarControllerWithViewControllers:(nullable NSArray<UIViewController *> *)viewControllers plusButton:(nullable UIView<XYDPlusButtonProtocol> *)plusButton tabBarItemsAttributes:(nullable NSArray<NSDictionary *> *)tabBarItemsAttributes;
 
 @end
 
