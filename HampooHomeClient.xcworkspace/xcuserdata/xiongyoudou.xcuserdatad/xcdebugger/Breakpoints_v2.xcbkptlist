@@ -33,22 +33,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HampooHomeClient/Class(&#x4e1a;&#x52a1;&#x6a21;&#x5757;)/TabBar/RoundPlusPathBtn.m"
-            timestampString = "501500066.366347"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "-plusButtonWidth"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "HampooHomeClient/Vendors(&#x7b2c;&#x4e09;&#x65b9;&#x5e93;)/XYDTabBarcontroller/XYDTabBar.m"
             timestampString = "501500345.9827"
             startingColumnNumber = "9223372036854775807"
@@ -86,6 +70,38 @@
             startingLineNumber = "479"
             endingLineNumber = "479"
             landmarkName = "-pathCenterButtonBloom"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HampooHomeClient/Class(&#x4e1a;&#x52a1;&#x6a21;&#x5757;)/&#x4e3b;&#x9875;/View/MainVCtrl.m"
+            timestampString = "501501767.635009"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "-popoverController:willTranslatePopoverWithYOffset:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HampooHomeClient/Class(&#x4e1a;&#x52a1;&#x6a21;&#x5757;)/&#x4e3b;&#x9875;/View/MainVCtrl.m"
+            timestampString = "501501687.676754"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-clickRightBtn:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

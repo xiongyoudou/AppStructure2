@@ -38,6 +38,10 @@
 #pragma mark - actions
 
 - (void)clickRightBtn:(UIButton *)btn {
+    if (selectOptionVCtrl.isPopoverVisible) {
+        [selectOptionVCtrl dismissPopoverAnimated:YES];
+        return;
+    }
     SelectOptionVCtrl *optionCtrl = [[SelectOptionVCtrl  alloc] initWithNibName:@"SelectOptionVCtrl" bundle:nil];
     optionCtrl.dataArray = @[@{@"text":@"发起群聊",@"imageName":@"contacts_add_newmessage"},@{@"text":@"添加朋友",@"imageName":@"contacts_add_friend"},@{@"text":@"扫一扫",@"imageName":@"contacts_add_scan"},@{@"text":@"拍照分享",@"imageName":@"contacts_add_photo"}];
     CGSize cellSize = CGSizeMake(150, 40);
@@ -69,7 +73,6 @@
 }
 
 - (void)popoverControllerDidDismissPopover:(WYPopoverController *)controller{
-
     selectOptionVCtrl.delegate = nil;
     selectOptionVCtrl = nil;
 }
