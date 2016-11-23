@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HampooHomeClient/Macro(&#x5b8f;)/UtilsMacro.h"
-            timestampString = "501388565.72769"
+            timestampString = "501563199.519272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44">
+            startingLineNumber = "42"
+            endingLineNumber = "42">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -33,44 +33,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HampooHomeClient/Vendors(&#x7b2c;&#x4e09;&#x65b9;&#x5e93;)/XYDTabBarcontroller/XYDTabBar.m"
-            timestampString = "501500345.9827"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "221"
-            endingLineNumber = "221"
-            landmarkName = "-plusButtonIndex"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "HampooHomeClient/Class(&#x4e1a;&#x52a1;&#x6a21;&#x5757;)/TabBar/RoundPlusPathBtn.m"
             timestampString = "501501175.912534"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "144"
             endingLineNumber = "144">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pods/DCPathButton/DCPathButton/Classes/DCPathButton.m"
-            timestampString = "501500801.545367"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "479"
-            endingLineNumber = "479"
-            landmarkName = "-pathCenterButtonBloom"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -95,13 +63,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HampooHomeClient/Class(&#x4e1a;&#x52a1;&#x6a21;&#x5757;)/&#x4e3b;&#x9875;/View/MainVCtrl.m"
-            timestampString = "501501687.676754"
+            filePath = "HampooHomeClient/Vendors(&#x7b2c;&#x4e09;&#x65b9;&#x5e93;)/XYDCategories/UIKit/UIWindow/UIWindow+XYDHierarchy.m"
+            timestampString = "501565491.106093"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "-clickRightBtn:"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "+getShowingWithType:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HampooHomeClient/Vendors(&#x7b2c;&#x4e09;&#x65b9;&#x5e93;)/XYDCategories/UIKit/UIWindow/UIWindow+XYDHierarchy.m"
+            timestampString = "501565492.186197"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "+getShowingWithType:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

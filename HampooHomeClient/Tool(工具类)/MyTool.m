@@ -74,51 +74,6 @@
     [searchBar setBackgroundColor :[ UIColor clearColor ]];
 }
 
-// 获取当前正显示的视图控制器
-+ (UIViewController *)getShowingViewingCtrl {
-    UIViewController *returnCtrl = [self activityViewController];
-    return  returnCtrl;
-}
-
-// 获取当前活跃控制器方法2
-+ (UIViewController *)activityViewController {
-    UIViewController* activityViewController = nil;
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-    if(window.windowLevel != UIWindowLevelNormal) {
-        NSArray *windows = [[UIApplication sharedApplication] windows];
-        for(UIWindow *tmpWin in windows) {
-            if(tmpWin.windowLevel == UIWindowLevelNormal) {
-                window = tmpWin;
-                break;
-            }
-        }
-    }
-    NSArray *viewsArray = [window subviews];
-    if([viewsArray count] > 0){
-        UIView *frontView = [viewsArray objectAtIndex:0];
-        id nextResponder = [frontView nextResponder];
-        if([nextResponder isKindOfClass:[UIViewController class]]) {
-            activityViewController = nextResponder;
-        } else {
-            activityViewController = window.rootViewController;
-        }
-    }
-    return [self getRealCurrentViewCtrl:activityViewController];
-}
-
-+ (UIViewController *)getRealCurrentViewCtrl:(UIViewController *)ctrl {
-    UIViewController *resultCtrl;
-    if ([ctrl isKindOfClass:[UINavigationController class]]) {
-        resultCtrl = [[(UINavigationController *)ctrl viewControllers] lastObject];
-        return [self getRealCurrentViewCtrl:resultCtrl];
-    }else if ([ctrl isKindOfClass:[UITabBarController class]]) {
-        resultCtrl = [(UITabBarController *)ctrl selectedViewController];
-        return [self getRealCurrentViewCtrl:resultCtrl];
-    } else {
-        resultCtrl = ctrl;
-        return resultCtrl;
-    }
-}
 
 #pragma mark - 处理按钮验证码倒计时
 

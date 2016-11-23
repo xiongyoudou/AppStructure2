@@ -35,8 +35,6 @@
 #define KWindow [[UIApplication sharedApplication].delegate window]
 #define KWindowSize KWindow.bounds.size
 
-#define KShowingViewCtrl [MyTool getShowingViewingCtrl]
-#define KShowingView KShowingViewCtrl.view
 
 // 3.颜色---可设置alpha
 #define COLOR(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]

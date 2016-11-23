@@ -10,10 +10,14 @@
 #import "MainVCtrl.h"
 #import "MoreVCtrl.h"
 #import "RoundCircularButton.h"
-#import "RoundPlusPathBtn.h"
+#import "RotateCircularButton.h"
+#import "EmptyCenterView.h"
+#import "AwesomeMenuTool.h"
 #import "CustomNavigationCtrl.h"
 
-@interface TabBarControllerConfig ()
+@interface TabBarControllerConfig () {
+    AwesomeMenuTool *menuTool;
+}
 
 @end
 
@@ -26,8 +30,10 @@
  */
 - (XYDTabBarController *)tabBarController {
     if (_tabBarController == nil) {
-        XYDTabBarController *tabBarController = [XYDTabBarController tabBarControllerWithViewControllers:self.viewControllers plusButton:[RoundPlusPathBtn getInstance] tabBarItemsAttributes:self.tabBarItemsAttributesForController];
-        [self customizeTabBarAppearance:tabBarController];
+        [self customizeTabBarAppearance];
+        XYDTabBarController *tabBarController = [XYDTabBarController tabBarControllerWithViewControllers:self.viewControllers plusButton:[EmptyCenterView new] tabBarItemsAttributes:self.tabBarItemsAttributesForController];
+        menuTool = [AwesomeMenuTool new];
+        [menuTool configAwesomeMenuOnTabbarWithView:tabBarController.view];
         _tabBarController = tabBarController;
     }
     return _tabBarController;
@@ -72,22 +78,24 @@
 /**
  *  更多TabBar自定义设置：比如：tabBarItem 的选中和不选中文字和背景图片属性、tabbar 背景图片属性等等
  */
-- (void)customizeTabBarAppearance:(XYDTabBarController *)tabBarController {
+- (void)customizeTabBarAppearance {
     // set the text color for unselected state
     // 普通状态下的文字属性
     NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
-    normalAttrs[NSForegroundColorAttributeName] = [UIColor grayColor];
+    normalAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
     
     // set the text color for selected state
     // 选中状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    selectedAttrs[NSForegroundColorAttributeName] = KNavBarColor;
+    
+
     
     // set the text Attributes
     // 设置文字属性
-    UITabBarItem *tabBar = [UITabBarItem appearance];
-    [tabBar setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
-    [tabBar setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+    UITabBarItem *tabBarItem = [UITabBarItem appearance];
+    [tabBarItem setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
+    [tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
 
     [[UITabBar appearance] setBackgroundImage:[[UIImage alloc] init]];
     [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]];

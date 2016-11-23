@@ -9,6 +9,7 @@
 #import "HttpHelper.h"
 #import "AFNetworking.h"
 
+
 @implementation HttpHelper
 
 #pragma mark - 通用
@@ -43,7 +44,7 @@
         
         if (isShow && errorInfo) {
             [MyTool dispatchMainQueueWithBlock:^{
-                [[DialogTool sharedInstance]modifyTextOnTextHud:errorInfo andSuperView:KShowingView dismissAfterDelay:kHudDelay andWorkDone:nil];
+                [[DialogTool sharedInstance]modifyTextOnTextHud:errorInfo andSuperView:[UIWindow getShowingViewingCtrl].view dismissAfterDelay:kHudDelay andWorkDone:nil];
             }];
         }
         return nil;

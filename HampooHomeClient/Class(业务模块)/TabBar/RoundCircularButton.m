@@ -16,10 +16,27 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        self = [self plusButton];
+        [self configUI];
     }
     return self;
 }
+
+- (void)configUI {
+    UIImage *buttonImage = [UIImage imageNamed:@"post_normal"];
+    [self setImage:buttonImage forState:UIControlStateNormal];
+    [self setTitle:@"创建" forState:UIControlStateNormal];
+    [self setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    
+    [self setTitle:@"创建" forState:UIControlStateSelected];
+    [self setTitleColor:KNavBarColor forState:UIControlStateSelected];
+    
+    self.titleLabel.font = [UIFont systemFontOfSize:9.5];
+    [self sizeToFit]; // or set frame in this way `button.frame = CGRectMake(0.0, 0.0, 250, 100);`
+    [self addTarget:self action:@selector(clickPublish) forControlEvents:UIControlEventTouchUpInside];
+    self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    self.adjustsImageWhenHighlighted = NO;
+}
+
 
 //上下结构的 button
 - (void)layoutSubviews {
@@ -49,28 +66,6 @@
 #pragma mark -
 #pragma mark - CYLPlusButtonSubclassing Methods
 
-/*
- *
- Create a custom UIButton with title and add it to the center of our tab bar
- *
- */
-- (id)plusButton {
-    UIImage *buttonImage = [UIImage imageNamed:@"post_normal"];
-    [self setImage:buttonImage forState:UIControlStateNormal];
-    [self setTitle:@"创建" forState:UIControlStateNormal];
-    [self setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    
-    [self setTitle:@"创建" forState:UIControlStateSelected];
-    [self setTitleColor:[UIColor blueColor] forState:UIControlStateSelected];
-    
-    self.titleLabel.font = [UIFont systemFontOfSize:9.5];
-    [self sizeToFit]; // or set frame in this way `button.frame = CGRectMake(0.0, 0.0, 250, 100);`
-    [self addTarget:self action:@selector(clickPublish) forControlEvents:UIControlEventTouchUpInside];
-    self.titleLabel.textAlignment = NSTextAlignmentCenter;
-    self.adjustsImageWhenHighlighted = NO;
-    return self;
-}
-
 - (void)plusChildViewControllerButtonClicked:(UIButton<XYDPlusButtonProtocol> *)sender {
     sender.btnSelected = YES;
 }
@@ -88,14 +83,6 @@
     return _btnSelected;
 }
 
-#pragma mark -
-#pragma mark - Event Response
-
-- (void)clickPublish {
-    self.btnSelected = !self.btnSelected;
-    NSLog(@"点击按钮");
-}
-
 #pragma mark - CYLPlusButtonSubclassing
 
 - (UIViewController *)plusChildViewController {
@@ -109,5 +96,14 @@
 - (CGFloat)multiplerInCenterY {
     return  0.3;
 }
+
+#pragma mark -
+#pragma mark - Event Response
+
+- (void)clickPublish {
+    self.btnSelected = !self.btnSelected;
+    NSLog(@"点击按钮");
+}
+
 
 @end

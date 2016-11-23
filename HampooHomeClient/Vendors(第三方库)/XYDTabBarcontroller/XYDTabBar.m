@@ -51,6 +51,7 @@ static void *const XYDTabBarContext = (void*)&XYDTabBarContext;
     return _barItems;
 }
 
+// 移除原生的uitabBarButton，添加自定义的item
 - (void)removeAllOriginalTabBarSubV {
     for (UIView *child in self.subviews) {
         if ([child isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
@@ -64,6 +65,10 @@ static void *const XYDTabBarContext = (void*)&XYDTabBarContext;
 {
     // 1.创建按钮
     XYDTabBarButton *tabBarButton = [[XYDTabBarButton alloc]init];
+    NSDictionary *normalAttribute = [[UITabBarItem appearance]titleTextAttributesForState:UIControlStateNormal];
+    NSDictionary *selectedAttribute = [[UITabBarItem appearance]titleTextAttributesForState:UIControlStateSelected];
+    [tabBarButton setTitleColor:normalAttribute[NSForegroundColorAttributeName] forState:UIControlStateNormal];
+    [tabBarButton setTitleColor:selectedAttribute[NSForegroundColorAttributeName] forState:UIControlStateSelected];
     [self addSubview:tabBarButton];
 
     // 2.设置数据
@@ -132,26 +137,23 @@ static void *const XYDTabBarContext = (void*)&XYDTabBarContext;
     CGFloat barHeight = self.bounds.size.height;
     
     _tabBarItemWidth = (barWidth - [_plusButton plusButtonWidth]) / [_tabBarController.viewControllers count];
-    if (_plusButton) {
-        CGFloat multiplerInCenterY = [self multiplerInCenterY];
-        self.plusButton.center = CGPointMake(barWidth * 0.5, barHeight * multiplerInCenterY);
-        if (self.barItems.count) {
-            [self setupSwappableImageViewDefaultOffset:self.barItems[0]];
-            NSUInteger plusButtonIndex = [self plusButtonIndex];
-            [self.barItems enumerateObjectsUsingBlock:^(UIView * _Nonnull childView, NSUInteger buttonIndex, BOOL * _Nonnull stop) {
-                //调整UITabBarItem的位置
-                CGFloat buttonX = buttonIndex * _tabBarItemWidth;
-                if (buttonIndex >= plusButtonIndex) {
-                    if (_plusButton) {
-                        buttonX += _plusButton.frame.size.width;
-                    }else {
-                        buttonX += _tabBarItemWidth;
-                    }
+
+    CGFloat multiplerInCenterY = [self multiplerInCenterY];
+    self.plusButton.center = CGPointMake(barWidth * 0.5, barHeight * multiplerInCenterY);
+    if (self.barItems.count) {
+        [self setupSwappableImageViewDefaultOffset:self.barItems[0]];
+        NSUInteger plusButtonIndex = [self plusButtonIndex];
+        [self.barItems enumerateObjectsUsingBlock:^(UIView * _Nonnull childView, NSUInteger buttonIndex, BOOL * _Nonnull stop) {
+            //调整UITabBarItem的位置
+            CGFloat buttonX = buttonIndex * _tabBarItemWidth;
+            if (buttonIndex >= plusButtonIndex) {
+                if (_plusButton) {
+                    buttonX += [_plusButton plusButtonWidth];
                 }
-                //仅修改childView的x和宽度,yh值不变
-                childView.frame = CGRectMake(buttonX, 0, _tabBarItemWidth, barHeight);
-            }];
-        }
+            }
+            //仅修改childView的x和宽度,yh值不变
+            childView.frame = CGRectMake(buttonX, 0, _tabBarItemWidth, barHeight);
+        }];
     }
     
     //bring the plus button to top
@@ -217,12 +219,6 @@ static void *const XYDTabBarContext = (void*)&XYDTabBarContext;
     NSUInteger plusButtonIndex;
     if ([self.plusButton respondsToSelector:@selector(indexOfPlusButtonInTabBar)]) {
         plusButtonIndex = [self.plusButton indexOfPlusButtonInTabBar];
-        //仅修改self.plusButton的x,ywh值不变
-        self.plusButton.frame = CGRectMake(plusButtonIndex * _tabBarItemWidth,
-                                           CGRectGetMinY(self.plusButton.frame),
-                                           CGRectGetWidth(self.plusButton.frame),
-                                           CGRectGetHeight(self.plusButton.frame)
-                                           );
     } else {
         if ([_tabBarController.viewControllers count] % 2 != 0) {
             [NSException raise:@"CYLTabBarController" format:@"If the count of CYLTabbarControllers is odd,you must realizse `+indexOfPlusButtonInTabBar` in your custom plusButton class.【Chinese】如果CYLTabbarControllers的个数是奇数，你必须在你自定义的plusButton中实现`+indexOfPlusButtonInTabBar`，来指定plusButton的位置"];

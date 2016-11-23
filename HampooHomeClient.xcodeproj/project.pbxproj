@@ -60,11 +60,6 @@
 		495D53E31DE3F09000649139 /* contacts_add_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 495D53DE1DE3F09000649139 /* contacts_add_photo@2x.png */; };
 		495D53E41DE3F09000649139 /* contacts_add_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 495D53DF1DE3F09000649139 /* contacts_add_scan@2x.png */; };
 		495D53E51DE3F09000649139 /* contacts_add_voip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 495D53E01DE3F09000649139 /* contacts_add_voip@2x.png */; };
-		495D53E81DE41E6D00649139 /* RoundPlusPathBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D53E71DE41E6D00649139 /* RoundPlusPathBtn.m */; };
-		495D53F11DE4347F00649139 /* chooser-button-input-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 495D53E91DE4347F00649139 /* chooser-button-input-highlighted.png */; };
-		495D53F21DE4347F00649139 /* chooser-button-input-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 495D53EA1DE4347F00649139 /* chooser-button-input-highlighted@2x.png */; };
-		495D53F31DE4347F00649139 /* chooser-button-input.png in Resources */ = {isa = PBXBuildFile; fileRef = 495D53EB1DE4347F00649139 /* chooser-button-input.png */; };
-		495D53F41DE4347F00649139 /* chooser-button-input@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 495D53EC1DE4347F00649139 /* chooser-button-input@2x.png */; };
 		495D53F51DE4347F00649139 /* chooser-button-tab-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 495D53ED1DE4347F00649139 /* chooser-button-tab-highlighted.png */; };
 		495D53F61DE4347F00649139 /* chooser-button-tab-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 495D53EE1DE4347F00649139 /* chooser-button-tab-highlighted@2x.png */; };
 		495D53F71DE4347F00649139 /* chooser-button-tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 495D53EF1DE4347F00649139 /* chooser-button-tab.png */; };
@@ -279,6 +274,9 @@
 		49896EDE1DD2C7BE006C50C9 /* UIWebView+XYDStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 49896E081DD2C7BE006C50C9 /* UIWebView+XYDStyle.m */; };
 		49896EDF1DD2C7BE006C50C9 /* UIWebVIew+XYDSwipeGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 49896E0A1DD2C7BE006C50C9 /* UIWebVIew+XYDSwipeGesture.m */; };
 		49896EE01DD2C7BE006C50C9 /* UIWindow+XYDHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49896E0D1DD2C7BE006C50C9 /* UIWindow+XYDHierarchy.m */; };
+		49A28EB51DE5299F008EDA0C /* RotateCircularButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A28EB41DE5299F008EDA0C /* RotateCircularButton.m */; };
+		49A28EB81DE53F81008EDA0C /* EmptyCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A28EB71DE53F81008EDA0C /* EmptyCenterView.m */; };
+		49A28EBB1DE54034008EDA0C /* AwesomeMenuTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A28EBA1DE54034008EDA0C /* AwesomeMenuTool.m */; };
 		49B087F31DD01032003E6916 /* HttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B087981DD01032003E6916 /* HttpHelper.m */; };
 		49B087F41DD01032003E6916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B0879B1DD01032003E6916 /* Assets.xcassets */; };
 		49B087F51DD01032003E6916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B0879C1DD01032003E6916 /* LaunchScreen.storyboard */; };
@@ -404,6 +402,10 @@
 		49D7FE361DD3FA490096B966 /* XYDSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D7FE351DD3FA490096B966 /* XYDSingleton.m */; };
 		49E5C2AD1DD55CE700A32241 /* NSError+XYDErrorCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E5C2AC1DD55CE700A32241 /* NSError+XYDErrorCode.m */; };
 		49E5C2BE1DD59BA500A32241 /* lame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E5C2BD1DD59BA500A32241 /* lame.framework */; };
+		49EF52731DE5463400B413F4 /* AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF52701DE5463400B413F4 /* AwesomeMenu.m */; };
+		49EF52741DE5463400B413F4 /* AwesomeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF52721DE5463400B413F4 /* AwesomeMenuItem.m */; };
+		49EF52941DE56B7400B413F4 /* chooser-moment-button-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 49EF52921DE56B7400B413F4 /* chooser-moment-button-highlighted.png */; };
+		49EF52951DE56B7400B413F4 /* chooser-moment-button-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49EF52931DE56B7400B413F4 /* chooser-moment-button-highlighted@2x.png */; };
 		B16D84D63A06BF26B235858C /* libPods-HampooHomeClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 700346F1A669FC6BED2CCA67 /* libPods-HampooHomeClient.a */; };
 /* End PBXBuildFile section */
 
@@ -475,12 +477,6 @@
 		495D53DE1DE3F09000649139 /* contacts_add_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contacts_add_photo@2x.png"; sourceTree = "<group>"; };
 		495D53DF1DE3F09000649139 /* contacts_add_scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contacts_add_scan@2x.png"; sourceTree = "<group>"; };
 		495D53E01DE3F09000649139 /* contacts_add_voip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contacts_add_voip@2x.png"; sourceTree = "<group>"; };
-		495D53E61DE41E6D00649139 /* RoundPlusPathBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundPlusPathBtn.h; sourceTree = "<group>"; };
-		495D53E71DE41E6D00649139 /* RoundPlusPathBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundPlusPathBtn.m; sourceTree = "<group>"; };
-		495D53E91DE4347F00649139 /* chooser-button-input-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chooser-button-input-highlighted.png"; sourceTree = "<group>"; };
-		495D53EA1DE4347F00649139 /* chooser-button-input-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chooser-button-input-highlighted@2x.png"; sourceTree = "<group>"; };
-		495D53EB1DE4347F00649139 /* chooser-button-input.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chooser-button-input.png"; sourceTree = "<group>"; };
-		495D53EC1DE4347F00649139 /* chooser-button-input@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chooser-button-input@2x.png"; sourceTree = "<group>"; };
 		495D53ED1DE4347F00649139 /* chooser-button-tab-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chooser-button-tab-highlighted.png"; sourceTree = "<group>"; };
 		495D53EE1DE4347F00649139 /* chooser-button-tab-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chooser-button-tab-highlighted@2x.png"; sourceTree = "<group>"; };
 		495D53EF1DE4347F00649139 /* chooser-button-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chooser-button-tab.png"; sourceTree = "<group>"; };
@@ -912,6 +908,12 @@
 		49896E121DD2C7BE006C50C9 /* XYDMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDMapKit.h; sourceTree = "<group>"; };
 		49896E131DD2C7BE006C50C9 /* XYDQuartzCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDQuartzCore.h; sourceTree = "<group>"; };
 		49896E141DD2C7BE006C50C9 /* XYDUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDUIKit.h; sourceTree = "<group>"; };
+		49A28EB31DE5299F008EDA0C /* RotateCircularButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateCircularButton.h; sourceTree = "<group>"; };
+		49A28EB41DE5299F008EDA0C /* RotateCircularButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateCircularButton.m; sourceTree = "<group>"; };
+		49A28EB61DE53F81008EDA0C /* EmptyCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyCenterView.h; sourceTree = "<group>"; };
+		49A28EB71DE53F81008EDA0C /* EmptyCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyCenterView.m; sourceTree = "<group>"; };
+		49A28EB91DE54034008EDA0C /* AwesomeMenuTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuTool.h; sourceTree = "<group>"; };
+		49A28EBA1DE54034008EDA0C /* AwesomeMenuTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuTool.m; sourceTree = "<group>"; };
 		49B087741DD004E0003E6916 /* HampooHomeClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HampooHomeClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B087971DD01032003E6916 /* HttpHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpHelper.h; sourceTree = "<group>"; };
 		49B087981DD01032003E6916 /* HttpHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpHelper.m; sourceTree = "<group>"; };
@@ -1091,6 +1093,12 @@
 		49E5C2AB1DD55CE700A32241 /* NSError+XYDErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+XYDErrorCode.h"; sourceTree = "<group>"; };
 		49E5C2AC1DD55CE700A32241 /* NSError+XYDErrorCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+XYDErrorCode.m"; sourceTree = "<group>"; };
 		49E5C2BD1DD59BA500A32241 /* lame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lame.framework; sourceTree = "<group>"; };
+		49EF526F1DE5463400B413F4 /* AwesomeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenu.h; sourceTree = "<group>"; };
+		49EF52701DE5463400B413F4 /* AwesomeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenu.m; sourceTree = "<group>"; };
+		49EF52711DE5463400B413F4 /* AwesomeMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuItem.h; sourceTree = "<group>"; };
+		49EF52721DE5463400B413F4 /* AwesomeMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuItem.m; sourceTree = "<group>"; };
+		49EF52921DE56B7400B413F4 /* chooser-moment-button-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chooser-moment-button-highlighted.png"; sourceTree = "<group>"; };
+		49EF52931DE56B7400B413F4 /* chooser-moment-button-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chooser-moment-button-highlighted@2x.png"; sourceTree = "<group>"; };
 		61BFDBB61361496476F203DA /* Pods-HampooHomeClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HampooHomeClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HampooHomeClient/Pods-HampooHomeClient.debug.xcconfig"; sourceTree = "<group>"; };
 		700346F1A669FC6BED2CCA67 /* libPods-HampooHomeClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HampooHomeClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03AB257B03FE963C251CB31 /* Pods-HampooHomeClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HampooHomeClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-HampooHomeClient/Pods-HampooHomeClient.release.xcconfig"; sourceTree = "<group>"; };
@@ -1150,8 +1158,12 @@
 				495D533E1DE280F500649139 /* TabBarControllerConfig.m */,
 				495D533B1DE280F500649139 /* RoundCircularButton.h */,
 				495D533C1DE280F500649139 /* RoundCircularButton.m */,
-				495D53E61DE41E6D00649139 /* RoundPlusPathBtn.h */,
-				495D53E71DE41E6D00649139 /* RoundPlusPathBtn.m */,
+				49A28EB31DE5299F008EDA0C /* RotateCircularButton.h */,
+				49A28EB41DE5299F008EDA0C /* RotateCircularButton.m */,
+				49A28EB61DE53F81008EDA0C /* EmptyCenterView.h */,
+				49A28EB71DE53F81008EDA0C /* EmptyCenterView.m */,
+				49A28EB91DE54034008EDA0C /* AwesomeMenuTool.h */,
+				49A28EBA1DE54034008EDA0C /* AwesomeMenuTool.m */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -1219,10 +1231,8 @@
 		495D539F1DE2E91A00649139 /* PathEffect */ = {
 			isa = PBXGroup;
 			children = (
-				495D53E91DE4347F00649139 /* chooser-button-input-highlighted.png */,
-				495D53EA1DE4347F00649139 /* chooser-button-input-highlighted@2x.png */,
-				495D53EB1DE4347F00649139 /* chooser-button-input.png */,
-				495D53EC1DE4347F00649139 /* chooser-button-input@2x.png */,
+				49EF52921DE56B7400B413F4 /* chooser-moment-button-highlighted.png */,
+				49EF52931DE56B7400B413F4 /* chooser-moment-button-highlighted@2x.png */,
 				495D53ED1DE4347F00649139 /* chooser-button-tab-highlighted.png */,
 				495D53EE1DE4347F00649139 /* chooser-button-tab-highlighted@2x.png */,
 				495D53EF1DE4347F00649139 /* chooser-button-tab.png */,
@@ -2446,6 +2456,7 @@
 		49B087AD1DD01032003E6916 /* Vendors(第三方库) */ = {
 			isa = PBXGroup;
 			children = (
+				49EF526E1DE5463400B413F4 /* AwesomeMenu */,
 				495D53481DE2856900649139 /* LeftSlideViewController */,
 				49D7FE331DD3FA0E0096B966 /* XYDSingleton */,
 				49D7FE0B1DD3262B0096B966 /* MLLabel */,
@@ -2785,6 +2796,17 @@
 			path = NSError;
 			sourceTree = "<group>";
 		};
+		49EF526E1DE5463400B413F4 /* AwesomeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				49EF526F1DE5463400B413F4 /* AwesomeMenu.h */,
+				49EF52701DE5463400B413F4 /* AwesomeMenu.m */,
+				49EF52711DE5463400B413F4 /* AwesomeMenuItem.h */,
+				49EF52721DE5463400B413F4 /* AwesomeMenuItem.m */,
+			);
+			path = AwesomeMenu;
+			sourceTree = "<group>";
+		};
 		53B675090A7334FDD28AE446 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2901,10 +2923,8 @@
 				49B089031DD0690B003E6916 /* tab_onlinedisk@2x.png in Resources */,
 				49B088FD1DD0690B003E6916 /* LaunchImage-800-667h@2x.png in Resources */,
 				49B088F11DD0690B003E6916 /* 3_launch@2x.png in Resources */,
-				495D53F11DE4347F00649139 /* chooser-button-input-highlighted.png in Resources */,
 				49B088091DD01032003E6916 /* ImageError@2x.png in Resources */,
 				495D53541DE2882400649139 /* leftbackiamge.png in Resources */,
-				495D53F41DE4347F00649139 /* chooser-button-input@2x.png in Resources */,
 				49B088E91DD0690B003E6916 /* 1_launch@2x.png in Resources */,
 				495D53C81DE2E91A00649139 /* chooser-moment-icon-sleep@2x.png in Resources */,
 				495D536C1DE2C7BA00649139 /* headImage.jpg in Resources */,
@@ -2920,7 +2940,6 @@
 				49B0882B1DD01033003E6916 /* UIBarButtonItemGridiOS6@2x.png in Resources */,
 				495D53681DE2C5FB00649139 /* tmp3473c04c.png in Resources */,
 				495D53D01DE2F8CD00649139 /* nav_ico_back@2x.png in Resources */,
-				495D53F31DE4347F00649139 /* chooser-button-input.png in Resources */,
 				49B088531DD02A08003E6916 /* main_badge@3x.png in Resources */,
 				49B088791DD05C51003E6916 /* XYDBottomBarCell.xib in Resources */,
 				49B088231DD01033003E6916 /* UIBarButtonItemArrowOutlineRight@2x.png in Resources */,
@@ -2928,6 +2947,7 @@
 				49B0881C1DD01033003E6916 /* PlayButtonOverlayLargeTap@3x.png in Resources */,
 				495D53C51DE2E91A00649139 /* chooser-moment-icon-sleep-highlighted.png in Resources */,
 				49B089051DD0690B003E6916 /* tab_onlinedisk_h@2x.png in Resources */,
+				49EF52951DE56B7400B413F4 /* chooser-moment-button-highlighted@2x.png in Resources */,
 				495D53CB1DE2E91A00649139 /* chooser-moment-icon-thought.png in Resources */,
 				49B088221DD01033003E6916 /* UIBarButtonItemArrowOutlineRight.png in Resources */,
 				495D53E11DE3F09000649139 /* contacts_add_friend@2x.png in Resources */,
@@ -2969,7 +2989,6 @@
 				495D53E21DE3F09000649139 /* contacts_add_newmessage@2x.png in Resources */,
 				49B088111DD01033003E6916 /* ImageSelectedSmallOff.png in Resources */,
 				49845F7A1DD1B3600060DED5 /* MoreVCtrl.xib in Resources */,
-				495D53F21DE4347F00649139 /* chooser-button-input-highlighted@2x.png in Resources */,
 				49B088171DD01033003E6916 /* PlayButtonOverlayLarge.png in Resources */,
 				495D53BC1DE2E91A00649139 /* chooser-moment-icon-camera@2x.png in Resources */,
 				49B089091DD0690B003E6916 /* tab_transferlog_h@2x.png in Resources */,
@@ -2985,6 +3004,7 @@
 				49B088FB1DD0690B003E6916 /* LaunchImage-700-568h@2x.png in Resources */,
 				49B088081DD01032003E6916 /* ImageError.png in Resources */,
 				495D53B71DE2E91A00649139 /* chooser-moment-button.png in Resources */,
+				49EF52941DE56B7400B413F4 /* chooser-moment-button-highlighted.png in Resources */,
 				495D53DA1DE3E1B400649139 /* SelectOptionVCtrl.xib in Resources */,
 				49B088F61DD0690B003E6916 /* 4_launch@3x.png in Resources */,
 				495D53CC1DE2E91A00649139 /* chooser-moment-icon-thought@2x.png in Resources */,
@@ -3060,6 +3080,7 @@
 				49896ECA1DD2C7BE006C50C9 /* UIView+XYDDraggable.m in Sources */,
 				49845F8E1DD1C3400060DED5 /* Mp3Recorder.m in Sources */,
 				49D7FE2D1DD3262B0096B966 /* MLLinkLabel.m in Sources */,
+				49A28EBB1DE54034008EDA0C /* AwesomeMenuTool.m in Sources */,
 				49E5C2AD1DD55CE700A32241 /* NSError+XYDErrorCode.m in Sources */,
 				49896ECC1DD2C7BE006C50C9 /* UIView+XYDFrame.m in Sources */,
 				49896E4C1DD2C7BE006C50C9 /* NSObject+XYDRuntime.m in Sources */,
@@ -3124,6 +3145,7 @@
 				495D53411DE280F500649139 /* TabBarControllerConfig.m in Sources */,
 				49D7FE261DD3262B0096B966 /* NSString+MLLabel.m in Sources */,
 				49896E491DD2C7BE006C50C9 /* NSObject+XYDGCD.m in Sources */,
+				49A28EB81DE53F81008EDA0C /* EmptyCenterView.m in Sources */,
 				49896E1B1DD2C7BE006C50C9 /* NSManagedObjectContext+XYDObjectClear.m in Sources */,
 				49896E7A1DD2C7BE006C50C9 /* UIBezierPath+XYDLength.m in Sources */,
 				49896E581DD2C7BE006C50C9 /* NSString+XYDPinyin.m in Sources */,
@@ -3131,6 +3153,7 @@
 				49896E191DD2C7BE006C50C9 /* NSManagedObjectContext+XYDFetching.m in Sources */,
 				49D7FE291DD3262B0096B966 /* NSAttributedString+MLExpression.m in Sources */,
 				49896E4B1DD2C7BE006C50C9 /* NSObject+XYDReflection.m in Sources */,
+				49A28EB51DE5299F008EDA0C /* RotateCircularButton.m in Sources */,
 				49896EAA1DD2C7BE006C50C9 /* UILabel+XYDAutomaticWriting.m in Sources */,
 				49896EC21DD2C7BE006C50C9 /* UITextField+XYDShake.m in Sources */,
 				49896E221DD2C7BE006C50C9 /* NSData+XYDDataCache.m in Sources */,
@@ -3233,6 +3256,7 @@
 				49896E801DD2C7BE006C50C9 /* UIButton+XYDCountDown.m in Sources */,
 				49896ED91DD2C7BE006C50C9 /* UIWebView+XYDBlocks.m in Sources */,
 				49896EBE1DD2C7BE006C50C9 /* UITableViewCell+XYDNIB.m in Sources */,
+				49EF52731DE5463400B413F4 /* AwesomeMenu.m in Sources */,
 				49B088021DD01032003E6916 /* MWTapDetectingImageView.m in Sources */,
 				49896EAE1DD2C7BE006C50C9 /* UINavigationController+XYDKeyboardFix.m in Sources */,
 				49896E971DD2C7BE006C50C9 /* UIImage+XYDCapture.m in Sources */,
@@ -3250,7 +3274,6 @@
 				49896EC81DD2C7BE006C50C9 /* UIView+XYDConstraints.m in Sources */,
 				49B0887E1DD05DA5003E6916 /* DACircularProgressView.m in Sources */,
 				49896E3B1DD2C7BE006C50C9 /* NSInvocation+XYDBlock.m in Sources */,
-				495D53E81DE41E6D00649139 /* RoundPlusPathBtn.m in Sources */,
 				49896EDC1DD2C7BE006C50C9 /* UIWebView+XYDLoad.m in Sources */,
 				49896EA51DD2C7BE006C50C9 /* UIImageView+XYDFaceAwareFill.m in Sources */,
 				49896E501DD2C7BE006C50C9 /* NSString+XYDContains.m in Sources */,
@@ -3259,6 +3282,7 @@
 				49896E6B1DD2C7BE006C50C9 /* MKMapView+XYDMoveLogo.m in Sources */,
 				49896E1A1DD2C7BE006C50C9 /* NSManagedObjectContext+XYDFetchRequestsConstructors.m in Sources */,
 				49896E721DD2C7BE006C50C9 /* CATransaction+XYDAnimateWithDuration.m in Sources */,
+				49EF52741DE5463400B413F4 /* AwesomeMenuItem.m in Sources */,
 				49896E341DD2C7BE006C50C9 /* NSDictionary+XYDXML.m in Sources */,
 				49896E151DD2C7BE006C50C9 /* NSFetchRequest+XYDExtensions.m in Sources */,
 				49896E541DD2C7BE006C50C9 /* NSString+XYDHash.m in Sources */,

@@ -28,11 +28,6 @@
 + (UIView *)getNibViewByNibName:(NSString *)nibName;
 // 设置serchBar背景
 + (void)customSearchBar:(UISearchBar *)searchBar;
-// 获取当前正显示的视图控制器
-+ (UIViewController *)getShowingViewingCtrl;
-// 获取当前活跃控制器方法2
-+ (UIViewController *)activityViewController;
-+ (UIViewController *)getRealCurrentViewCtrl:(UIViewController *)ctrl;
 
 #pragma mark - 处理按钮验证码倒计时
 + (void)countDownAfterClick:(UIButton *)btn countDownSeconds:(int)seconds;
