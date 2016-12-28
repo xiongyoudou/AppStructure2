@@ -138,7 +138,7 @@
     
 }
 
-#pragma mark - Configure Bottom View Color
+#pragma mark - Configure Bottom View
 
 - (void)setBottomViewColor:(UIColor *)bottomViewColor {
     
@@ -147,6 +147,10 @@
     }
     _bottomViewColor = bottomViewColor;
     
+}
+
+- (void)updateBottomViewCenter:(CGPoint)center {
+    _bottomView.center = center;
 }
 
 #pragma mark - Configure Button Sound
@@ -609,6 +613,28 @@
     [self pathCenterButtonFold];
     
 }
+
+/*!
+ *  Capturing touches on a subview outside the frame of its superview.
+ */
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    if (self.clipsToBounds || self.hidden || (self.alpha == 0.f)) {
+        return nil;
+    }
+    UIView *result = [super hitTest:point withEvent:event];
+    if (result) {
+        return result;
+    }
+    for (UIView *subview in self.subviews.reverseObjectEnumerator) {
+        CGPoint subPoint = [subview convertPoint:point fromView:self];
+        result = [subview hitTest:subPoint withEvent:event];
+        if (result) {
+            return result;
+        }
+    }
+    return nil;
+}
+
 
 #pragma mark - DCPathButton Item Delegate
 

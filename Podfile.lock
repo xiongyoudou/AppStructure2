@@ -14,7 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - DCPathButton (2.1.4)
   - EAIntroView (2.9.0):
     - EARestrictedScrollView (~> 1.1.0)
   - EARestrictedScrollView (1.1.0)
@@ -29,7 +28,6 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - DCPathButton
   - EAIntroView
   - Masonry
   - MBProgressHUD
@@ -40,16 +38,15 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  DCPathButton: 99c8211ef3eafc3b438c917a4c7b4502fa77eee7
   EAIntroView: 76f68cc56242f2e25359419e6ecc2344ee7e1756
   EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
   SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
   WYPopoverController: a9db25ac2841a686acdc0f3a99bdb21545db32f4
 
-PODFILE CHECKSUM: 19e3858f5d15b1872b730adc93f4331bc0e49f0e
+PODFILE CHECKSUM: ea7de5ffb6afc1c404abbf142eba1e7e51f0c1cc
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

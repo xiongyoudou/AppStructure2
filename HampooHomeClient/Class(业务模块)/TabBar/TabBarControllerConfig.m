@@ -33,7 +33,7 @@
         [self customizeTabBarAppearance];
         XYDTabBarController *tabBarController = [XYDTabBarController tabBarControllerWithViewControllers:self.viewControllers plusButton:[EmptyCenterView new] tabBarItemsAttributes:self.tabBarItemsAttributesForController];
         menuTool = [AwesomeMenuTool new];
-        [menuTool configAwesomeMenuOnTabbarWithView:tabBarController.view];
+        [menuTool configAwesomeMenuOnTabbarWithView:tabBarController.tabBar];
         _tabBarController = tabBarController;
     }
     return _tabBarController;

@@ -24,10 +24,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## DCPathButton
-
-The DCPathButton use the MIT license
-
 ## EAIntroView
 
 Copyright (c) 2013-2015 Evgeny Aleksandrov

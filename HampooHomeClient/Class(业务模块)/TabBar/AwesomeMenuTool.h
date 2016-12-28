@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <DCPathButton/DCPathButton.h>
+#import "DCPathButton.h"
 
 
 @interface AwesomeMenuTool : NSObject<DCPathButtonDelegate>

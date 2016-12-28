@@ -72,6 +72,7 @@
     dcPathButton.bloomDirection = kDCPathButtonBloomDirectionTop;
     dcPathButton.bottomViewColor = [UIColor blackColor];
     [view addSubview:dcPathButton];
+    [dcPathButton updateBottomViewCenter:CGPointMake(0, -([UIScreen mainScreen].bounds.size.height - view.bounds.size.height) / 2)];
 }
 
 #pragma mark - DCPathButton Delegate

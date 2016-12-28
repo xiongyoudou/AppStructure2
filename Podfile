@@ -7,7 +7,6 @@ pod 'SDWebImage'
 pod 'Masonry'
 pod 'SSKeychain'
 pod 'MJRefresh'
-pod 'DCPathButton'
 pod 'WYPopoverController'
 end
 

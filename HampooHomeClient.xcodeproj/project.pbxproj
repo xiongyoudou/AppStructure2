@@ -389,6 +389,12 @@
 		49B089081DD0690B003E6916 /* tab_transferlog@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B088DF1DD0690B003E6916 /* tab_transferlog@3x.png */; };
 		49B089091DD0690B003E6916 /* tab_transferlog_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B088E01DD0690B003E6916 /* tab_transferlog_h@2x.png */; };
 		49B0890A1DD0690B003E6916 /* tab_transferlog_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B088E11DD0690B003E6916 /* tab_transferlog_h@3x.png */; };
+		49B495A71E135F560033CFCC /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B4959F1E135F560033CFCC /* DCPathButton.m */; };
+		49B495A81E135F560033CFCC /* DCPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B495A11E135F560033CFCC /* DCPathItemButton.m */; };
+		49B495A91E135F560033CFCC /* bloom.caf in Resources */ = {isa = PBXBuildFile; fileRef = 49B495A31E135F560033CFCC /* bloom.caf */; };
+		49B495AA1E135F560033CFCC /* fold.caf in Resources */ = {isa = PBXBuildFile; fileRef = 49B495A41E135F560033CFCC /* fold.caf */; };
+		49B495AB1E135F560033CFCC /* selected.caf in Resources */ = {isa = PBXBuildFile; fileRef = 49B495A51E135F560033CFCC /* selected.caf */; };
+		49B495AC1E135F560033CFCC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 49B495A61E135F560033CFCC /* README.md */; };
 		49D7FE241DD3262B0096B966 /* NSAttributedString+MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D7FE0E1DD3262B0096B966 /* NSAttributedString+MLLabel.m */; };
 		49D7FE251DD3262B0096B966 /* NSMutableAttributedString+MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D7FE101DD3262B0096B966 /* NSMutableAttributedString+MLLabel.m */; };
 		49D7FE261DD3262B0096B966 /* NSString+MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D7FE121DD3262B0096B966 /* NSString+MLLabel.m */; };
@@ -1067,6 +1073,14 @@
 		49B088DF1DD0690B003E6916 /* tab_transferlog@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_transferlog@3x.png"; sourceTree = "<group>"; };
 		49B088E01DD0690B003E6916 /* tab_transferlog_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_transferlog_h@2x.png"; sourceTree = "<group>"; };
 		49B088E11DD0690B003E6916 /* tab_transferlog_h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_transferlog_h@3x.png"; sourceTree = "<group>"; };
+		49B4959E1E135F560033CFCC /* DCPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathButton.h; sourceTree = "<group>"; };
+		49B4959F1E135F560033CFCC /* DCPathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPathButton.m; sourceTree = "<group>"; };
+		49B495A01E135F560033CFCC /* DCPathItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathItemButton.h; sourceTree = "<group>"; };
+		49B495A11E135F560033CFCC /* DCPathItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPathItemButton.m; sourceTree = "<group>"; };
+		49B495A31E135F560033CFCC /* bloom.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bloom.caf; sourceTree = "<group>"; };
+		49B495A41E135F560033CFCC /* fold.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fold.caf; sourceTree = "<group>"; };
+		49B495A51E135F560033CFCC /* selected.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = selected.caf; sourceTree = "<group>"; };
+		49B495A61E135F560033CFCC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		49D7FE0D1DD3262B0096B966 /* NSAttributedString+MLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+MLLabel.h"; sourceTree = "<group>"; };
 		49D7FE0E1DD3262B0096B966 /* NSAttributedString+MLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+MLLabel.m"; sourceTree = "<group>"; };
 		49D7FE0F1DD3262B0096B966 /* NSMutableAttributedString+MLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+MLLabel.h"; sourceTree = "<group>"; };
@@ -2456,6 +2470,7 @@
 		49B087AD1DD01032003E6916 /* Vendors(第三方库) */ = {
 			isa = PBXGroup;
 			children = (
+				49B4959B1E135F560033CFCC /* DCPathButton */,
 				49EF526E1DE5463400B413F4 /* AwesomeMenu */,
 				495D53481DE2856900649139 /* LeftSlideViewController */,
 				49D7FE331DD3FA0E0096B966 /* XYDSingleton */,
@@ -2726,6 +2741,45 @@
 			path = Video;
 			sourceTree = "<group>";
 		};
+		49B4959B1E135F560033CFCC /* DCPathButton */ = {
+			isa = PBXGroup;
+			children = (
+				49B4959C1E135F560033CFCC /* DCPathButton */,
+				49B495A61E135F560033CFCC /* README.md */,
+			);
+			path = DCPathButton;
+			sourceTree = "<group>";
+		};
+		49B4959C1E135F560033CFCC /* DCPathButton */ = {
+			isa = PBXGroup;
+			children = (
+				49B4959D1E135F560033CFCC /* Classes */,
+				49B495A21E135F560033CFCC /* Sounds */,
+			);
+			path = DCPathButton;
+			sourceTree = "<group>";
+		};
+		49B4959D1E135F560033CFCC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				49B4959E1E135F560033CFCC /* DCPathButton.h */,
+				49B4959F1E135F560033CFCC /* DCPathButton.m */,
+				49B495A01E135F560033CFCC /* DCPathItemButton.h */,
+				49B495A11E135F560033CFCC /* DCPathItemButton.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		49B495A21E135F560033CFCC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				49B495A31E135F560033CFCC /* bloom.caf */,
+				49B495A41E135F560033CFCC /* fold.caf */,
+				49B495A51E135F560033CFCC /* selected.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		49D7FE0B1DD3262B0096B966 /* MLLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -2898,6 +2952,7 @@
 				495D53BD1DE2E91A00649139 /* chooser-moment-icon-music-highlighted.png in Resources */,
 				49B088191DD01033003E6916 /* PlayButtonOverlayLarge@3x.png in Resources */,
 				49B0890A1DD0690B003E6916 /* tab_transferlog_h@3x.png in Resources */,
+				49B495AB1E135F560033CFCC /* selected.caf in Resources */,
 				49B087F71DD01032003E6916 /* Info.plist in Resources */,
 				49B088141DD01033003E6916 /* ImageSelectedSmallOn.png in Resources */,
 				49B088261DD01033003E6916 /* UIBarButtonItemArrowRight@3x.png in Resources */,
@@ -2919,6 +2974,7 @@
 				495D53551DE2882400649139 /* menu.png in Resources */,
 				49B0881E1DD01033003E6916 /* UIBarButtonItemArrowLeft@2x.png in Resources */,
 				49B087F61DD01032003E6916 /* Main.storyboard in Resources */,
+				49B495AA1E135F560033CFCC /* fold.caf in Resources */,
 				49B088EE1DD0690B003E6916 /* 2_launch@3x.png in Resources */,
 				49B089031DD0690B003E6916 /* tab_onlinedisk@2x.png in Resources */,
 				49B088FD1DD0690B003E6916 /* LaunchImage-800-667h@2x.png in Resources */,
@@ -2984,6 +3040,7 @@
 				49B088F01DD0690B003E6916 /* 3_launch-5h@2x.png in Resources */,
 				49B0880F1DD01032003E6916 /* ImageSelectedOn@2x.png in Resources */,
 				49B088251DD01033003E6916 /* UIBarButtonItemArrowRight@2x.png in Resources */,
+				49B495A91E135F560033CFCC /* bloom.caf in Resources */,
 				49845F721DD1B24D0060DED5 /* MainVCtrl.xib in Resources */,
 				49B088E81DD0690B003E6916 /* 1_launch-5h@2x.png in Resources */,
 				495D53E21DE3F09000649139 /* contacts_add_newmessage@2x.png in Resources */,
@@ -3062,7 +3119,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3143,6 +3200,7 @@
 				49896E331DD2C7BE006C50C9 /* NSDictionary+XYDURL.m in Sources */,
 				49896E821DD2C7BE006C50C9 /* UIButton+XYDIndicator.m in Sources */,
 				495D53411DE280F500649139 /* TabBarControllerConfig.m in Sources */,
+				49B495A81E135F560033CFCC /* DCPathItemButton.m in Sources */,
 				49D7FE261DD3262B0096B966 /* NSString+MLLabel.m in Sources */,
 				49896E491DD2C7BE006C50C9 /* NSObject+XYDGCD.m in Sources */,
 				49A28EB81DE53F81008EDA0C /* EmptyCenterView.m in Sources */,
@@ -3225,6 +3283,7 @@
 				49896E3D1DD2C7BE006C50C9 /* NSDecimalNumber+XYDCalculatingByString.m in Sources */,
 				49896ED41DD2C7BE006C50C9 /* UIViewController+XYDBackButtonTouched.m in Sources */,
 				49896E6F1DD2C7BE006C50C9 /* CALayer+XYDBorderColor.m in Sources */,
+				49B495A71E135F560033CFCC /* DCPathButton.m in Sources */,
 				49896EA11DD2C7BE006C50C9 /* UIImage+XYDSuperCompress.m in Sources */,
 				49896E5C1DD2C7BE006C50C9 /* NSString+XYDStringPages.m in Sources */,
 				49896E9E1DD2C7BE006C50C9 /* UIImage+XYDRemoteSize.m in Sources */,
@@ -3268,6 +3327,7 @@
 				49896E171DD2C7BE006C50C9 /* NSManagedObject+XYDExtensions.m in Sources */,
 				49896E991DD2C7BE006C50C9 /* UIImage+XYDFileName.m in Sources */,
 				49B088031DD01032003E6916 /* MWTapDetectingView.m in Sources */,
+				49B495AC1E135F560033CFCC /* README.md in Sources */,
 				49B088541DD02A08003E6916 /* XYDBadgeButton.m in Sources */,
 				49896E241DD2C7BE006C50C9 /* NSData+XYDGzip.m in Sources */,
 				49B087FA1DD01032003E6916 /* HttpTool.m in Sources */,
