@@ -279,12 +279,17 @@
     
     if(touch.view.tag == vDeckCanNotPanViewTag)
     {
-//        NSLog(@"不响应侧滑");
+        //        NSLog(@"不响应侧滑");
         return NO;
     }
     else
     {
-//        NSLog(@"响应侧滑");
+        if ([touch locationInView:self.mainVC.view].x > kLeftMarginCanSwipe) {
+            return NO;
+        }
+        
+        //        NSLog(@"响应侧滑");
+        [self.rightMaskView.superview bringSubviewToFront:self.rightMaskView];
         return YES;
     }
 }
